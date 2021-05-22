@@ -1,0 +1,20 @@
+{
+  "name": "javascript-card-validator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js",
+    "compile": "browserify validator.js -o ./public/validator.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "card-validator": "^8.1.1",
+    "express": "^4.17.1"
+  }
+}

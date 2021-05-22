@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="validator.js" defer></script>
+    <script src="script.js" defer></script>
+    <title></title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cc-types">
+            <img class="cc-types__img cc-types__img--mir">
+            <img class="cc-types__img cc-types__img--visa">
+            <img class="cc-types__img cc-types__img--mastercard">
+            <img class="cc-types__img cc-types__img--generic">
+        </div>
+        <input type="text" maxlength="19" class="cc-number-input">
+        
+        <input type="text" maxlength="5" class="cc-expiry-input">
+        <input type="text" maxlength="3" class="cc-cvc-input">
+        
+        <hr noshade="">
+
+        <div>
+            <div>Название карты: <b><span id="nice-card-type"></span></b></div>
+            <div>Код карты: <b><span id="card-type"></span></b></div>
+            <div>Потенциально корректная: <b><span id="is-card-potentially-valid"></span></b></div>
+            <div>Полностью корректная: <b><span id="is-card-valid"></span></b></div>
+        </div>
+    </div>
+</body>
+</html>
